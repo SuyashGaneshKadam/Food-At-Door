@@ -248,6 +248,17 @@ nav {
   font-weight: 500;
   line-height: 20px; /* 142.857% */
 }
+
+/* Call to Action */
+#call-to-action{
+  width: 80vw;
+  margin: auto;
+  margin-top: 100px;
+}
+#call-to-action>img{
+  height: 100%;
+  width: 100%;
+}
 /* Footer */
 footer {
   width: 98vw;
@@ -258,7 +269,7 @@ footer {
     rgba(255, 253, 242, 0.5) 50.97%,
     #fdeef3 100.85%
   );
-  margin-top: 50px;
+  /* margin-top: 50px; */
   padding-inline: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
