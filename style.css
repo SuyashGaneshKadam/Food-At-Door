@@ -88,7 +88,9 @@ nav {
   background-color: antiquewhite;
   padding-left: 100px;
 }
-
+#hero-left{
+  flex:1;
+}
 #hero-left > div {
   width: fit-content;
   border-radius: 23px;
@@ -132,6 +134,15 @@ nav {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.18px;
+}
+#hero-right{
+  flex:1;
+  padding: 50px;
+}
+#hero-right > img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
 }
 
 /* About us */
@@ -250,12 +261,12 @@ nav {
 }
 
 /* Call to Action */
-#call-to-action{
+#call-to-action {
   width: 80vw;
   margin: auto;
   margin-top: 100px;
 }
-#call-to-action>img{
+#call-to-action > img {
   height: 100%;
   width: 100%;
 }
@@ -304,9 +315,52 @@ footer {
   line-height: 35px; /* 218.75% */
 }
 
-.footer-col-right > p:hover{
-    cursor: pointer;
-    color: black;
-    text-shadow: 3px 3px 10px black;
-    text-decoration: underline;
+.footer-col-right > p:hover {
+  cursor: pointer;
+  color: black;
+  text-shadow: 3px 3px 10px black;
+  text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  nav{
+    position: relative;
+    flex-direction: column;
+    width: 95vw;
+    margin: auto;
+  }
+  #nav-right, #about-us{
+    flex-direction: column;
+    align-items: center;
+  }
+  #nav-right-shop, #nav-right>button {
+    margin-top: 10px;
+  }
+  #hero-section{
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 95vw;
+    margin: auto;
+    padding: 50px;
+    padding-top: 0px;
+  }
+  #about-us-left, .about-us-right, .special-recipes-card{
+    margin-top: 50px;
+  }
+  #call-to-action{
+    display: none;
+  }
+  footer{
+    width: 95vw;
+    margin: auto;
+    margin-top: 50px;
+  }
+  #footer-col-left{
+    padding:0px;
+  }
+  .footer-col-right>h5{
+    padding-top: 20px;
+  }
 }
